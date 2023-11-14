@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="shortcut icon" href="favicon-2.ico" type="image/x-icon">
+
+    <!-- -----------------------------------------CDN FOR TAILWINDCSS------------------------- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-blue-500 flex justify-center items-center h-screen relative">
+
+    <!-- --------------------------headering of website------------------------ -->
+    <h1 class="text-5xl font-bold absolute top-11 hover:text-white uppercase underline decoration-yellow-100 decoration-1">
+      Form Validation
+    </h1>
+
+    <!-- ------------------------------------Bigger Container of Website---------------------------------------- -->
+    <div class="w-64 h-[17rem] bg-white rounded-lg">
+      <h1 class="text-2xl font-bold text-center mt-6 mb-4">Login</h1>
+
+      <!-- --------------------------form of webpage ---------------------------------------------- -->
+      <form action="" onsubmit="return validationform()">
+        <input
+          class="border-[1px] border-black ml-8 w-[12.25rem] h-[2.4rem] rounded-md p-3 font-semibold"
+          type="text"
+          placeholder="User Name"
+          id="username"
+        />
+        <p id="usererror" class="ml-9 text-red-600 font-semibold"></p>
+
+        <input
+          class="border-[1px] border-black mt-3 ml-8 w-[12.25rem] h-[2.4rem] rounded-md p-3 font-semibold"
+          type="text"
+          placeholder="Password"
+          id="password"
+        />
+        <p id="passerror" class="ml-9 text-red-600 font-semibold"></p>
+
+        <button
+          class="mt-3 rounded-md border[1px] border-black bg-green-700 p-1 text-xl font-semibold ml-[5.5rem] text-white"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="logic.js"></script>
+</html>
